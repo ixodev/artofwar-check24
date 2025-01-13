@@ -1,0 +1,7 @@
+# META config file
+# Do not edit please
+
+size=16x16
+
+faceset=Faceset.png
+default_animation=SpriteSheet.png

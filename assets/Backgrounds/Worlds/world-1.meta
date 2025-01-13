@@ -1,0 +1,7 @@
+# META config file
+# Do not edit please
+
+
+name=Desert
+main_map=desert.tmx
+maps={desert.tmx}

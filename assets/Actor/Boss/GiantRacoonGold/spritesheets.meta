@@ -1,0 +1,13 @@
+# META config file
+# Do not edit please
+
+size=60x60
+
+faceset=Faceset.png
+
+idle=Idle.png
+jump=Jump.png
+charge=Charge.png
+attack=Attack.png
+
+default_animation=idle

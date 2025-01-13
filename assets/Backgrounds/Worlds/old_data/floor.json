@@ -1,0 +1,48 @@
+// This is a little mappy program to setup map components for the game
+// This is a comment
+// --------------------------------------------
+// Builtin variables: bTileSize, bTilesetSource, bWidth, bHeight
+// bTileSize: it sets the tile size for all tiles (we consider them as squares). All given texture
+//            coordinates will be multiplied with this builtin variable
+// bTilesetSource: it sets the tileset (as an image) to use, where the MappyReader class will read and extract the textures
+// bWidth: it is the width of the tileset which was loaded with bTilesetSource
+// bHeight: as same as bWidth but with the height of the tileset.
+// You can change bTilesetSource & bTileSize several times in the mapconfig program.
+// --------------------------------------------
+// The texture coordinates (2D) will be separated with commas:
+// example: we want to take the tile at the upper left corner (0, 0), for a size of 32x32px.
+// we then just set 0,0,32,32
+
+
+bTileSize=16
+bTilesetSource=assets/Backgrounds/Tilesets/TilesetFloor.png
+
+desert_1_floor_1=1,1,1,1
+desert_1_floor_2=0,4,1,1
+desert_1_floor_3=1,4,1,1
+
+desert_2_floor_1=12,1,1,1
+desert_2_floor_2=11,4,1,1
+desert_2_floor_3=12,4,1,1
+
+summer_floor_1=0,12,1,1
+summer_floor_2=1,12,1,1
+summer_floor_3=2,12,1,1
+summer_floor_4=3,12,1,1
+summer_floor_5=4,12,1,1
+summer_floor_6=2,11,1,1
+summer_floor_7=3,11,1,1
+
+spring_floor_1=11,12,1,1
+spring_floor_2=12,12,1,1
+spring_floor_3=13,12,1,1
+spring_floor_4=14,12,1,1
+spring_floor_5=15,12,1,1
+
+winter_floor_1=1,15,1,1
+winter_floor_2=0,18,1,1
+winter_floor_3=1,18,1,1
+
+autumn_floor_1=12,15,1,1
+autumn_floor_2=11,18,1,1
+autumn_floor_3=12,18,1,1

@@ -1,0 +1,29 @@
+# META config file
+# do not edit please
+
+CircularSlashSize={32,32}
+ClawSize={32,32}
+ClawDoubleSize={32,32}
+CutSize={32,32}
+SlashSize={32,32}
+SlashCurvedSize={32,32}
+SlashDoubleSize={32,32}
+SlashDoubleCurvedSize={32,32}
+
+SmokeSize={32,32}
+CircularSmokeSize={30,14}
+
+IceSize={32,32}
+Ice2Size={32,32}
+
+FireSize={8,12}
+FlakeSize={32,32}
+
+CloudsSize={80,36}
+RainSize={8,8}
+RainOnFloorSize={8,8}
+
+FlamSize={32,32}
+PlantSize={30,28}
+Plant2Size={30,26}
+ThunderSize={20,28}

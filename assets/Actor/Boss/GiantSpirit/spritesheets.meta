@@ -1,0 +1,11 @@
+# META config file
+# Do not edit please
+
+size=50x50
+
+faceset=Faceset.png
+
+idle=Idle.png
+hit=Hit.png
+
+default_animation=idle

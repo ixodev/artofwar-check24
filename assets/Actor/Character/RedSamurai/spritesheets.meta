@@ -1,0 +1,18 @@
+# META config file
+# Do not edit please
+
+
+size=16x16
+
+faceset=Faceset.png
+
+idle=Idle.png
+walk=Walk.png
+attack=Attack.png
+jump=Jump.png
+dead=Dead.png
+item=Item.png
+special1=Special1.png
+special2=Special2.png
+
+default_animation=idle

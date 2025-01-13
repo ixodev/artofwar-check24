@@ -1,0 +1,50 @@
+{
+
+  "tilesetSource": "assets/Backgrounds/Tilesets/Tiles/TilesetNature.png",
+  "tileSize": 16,
+
+  "tiles": {
+
+    "tree-1": "0, 0, 2, 2",
+    "fir-tree-2": "2, 0, 2, 2",
+    "tree-without-leaves-1": "4, 0, 2, 2",
+    "tree-2": "6, 0, 2, 2",
+    "winter-tree-1": "8, 0, 2, 2",
+    "winter-tree-2": "10, 0, 2, 2",
+    "winter-tree-3": "12, 0, 2, 2",
+    "special-tree-1": "14, 0, 2, 2",
+    "tree-3": "16, 0, 2, 2",
+    "tree-4": "18, 0, 2, 2",
+
+    "group-trees-fir-tree": "0, 2, 4, 3",
+    "group-trees-tree": "4, 2, 4, 3",
+    "group-trees-winter-tree": "8, 2, 4, 3",
+    "group-trees-special-tree": "12, 2, 4, 3",
+    "group-trees-tree-2": "16, 2, 4, 3",
+    "group-trees-tree-3": "20, 2, 4, 3",
+
+    "trunk-dark": "0, 8, 2, 2",
+    "trunk-clear": "2, 8, 2, 2",
+    "trunk": "4, 8, 1, 1",
+    "wood": "4, 9, 1, 1",
+    "wood-2": "5, 8, 1, 1",
+    "plant": "5, 9, 1, 1",
+
+    "tree-5": "6, 8, 2, 2",
+    "hay": "9, 8, 1, 1",
+    "hay-2": "9, 9, 1, 1",
+    "hay-3": "10, 8, 1, 1",
+    "hay-4": "10, 9, 1, 1",
+
+    "palm": "11, 8, 1, 3",
+
+    "plant-2": "0, 10, 1, 1",
+    "plant-3": "1, 10, 1, 1",
+    "plant-4": "2, 10 , 1, 1",
+    "plant-5": "3, 10, 1, 1",
+    "plant-6": "4, 10, 1, 1",
+    "plant-7": "5, 10, 1, 1",
+
+  }
+
+}

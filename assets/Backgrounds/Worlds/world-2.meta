@@ -1,0 +1,5 @@
+# META world config file
+# DO NOT EDIT
+
+main_map=iceland.tmx
+maps={iceland.tmx}

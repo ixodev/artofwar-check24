@@ -1,0 +1,6 @@
+# META config file
+# Do not edit please
+
+faceset=FacesetBrown.png 1 1
+idle=SpriteSheetBrown.png 2 1
+idle_side=SpriteSheetBrownSide.png 2 1

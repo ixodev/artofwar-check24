@@ -1,0 +1,55 @@
+// This is a little mappy program to setup map components for the game
+// This is a comment
+// --------------------------------------------
+// Builtin variables: bTileSize, bTilesetSource, bWidth, bHeight
+// bTileSize: it sets the tile size for all tiles (we consider them as squares). All given texture coordinates
+//            multiplied with this builtin variable
+// bTilesetSource: it sets the tileset (as an image) to use, where the MappyReader class will read and extract the textures
+// bWidth: it is the width of the tileset which was loaded with bTilesetSource
+// bHeight: as same as bWidth but with the height of the tileset.
+// You can change bTilesetSource & bTileSize several times in the mapconfig program.
+// --------------------------------------------
+// The texture coordinates (2D) will be separated with commas:
+// example: we want to take the tile at the upper left corner (0, 0), for a size of 32x32px.
+// we then just set 0,0,32,32
+
+bTileSize=16
+
+bTilesetSource=assets/Backgrounds/Tilesets/TilesetHouse.png
+0,0,4,3
+4,0,4,3
+8,0,4,3
+12,0,4,3
+16,0,3,3
+19,0,4,3
+23,0,3,3
+26,0,3,3
+29,0,3,3
+32,0,4,4
+0,7,3,3
+3,8,3,2
+0,11,3,3
+3,11,3,3
+6,11,3,3
+29,4,3,4
+25,7,4,5
+25,14,4,5
+
+bTilesetSource=assets/Backgrounds/Tilesets/TilesetDesert.png
+0,0,3,3
+3,0,3,5
+6,0,4,3
+10,0,6,4
+16,0,4,4
+6,3,4,4
+2,5,4,5
+
+bTilesetSource=assets/Backgrounds/Tilesets/TilesetVillageAbandoned.png
+0,0,4,3
+4,0,4,3
+11,0,3,3
+14,0,3,5
+17,0,3,3
+11,3,3,3
+16,5,4,5
+12,6,4,5
