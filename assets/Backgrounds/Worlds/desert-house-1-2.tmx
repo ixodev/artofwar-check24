@@ -4,20 +4,20 @@
  <tileset firstgid="375" source="wall-simple.tsx"/>
  <tileset firstgid="485" source="elements.tsx"/>
  <objectgroup id="8" name="objects">
-  <object id="2" name="s_desert-house-1.tmx" x="189.144" y="15.5973">
+  <object id="2" name="spn_desert-house-1.tmx" x="189.144" y="15.5973">
    <point/>
   </object>
-  <object id="3" name="m_desert-house-1.tmx" x="208.75" y="14.5" width="6.5" height="17"/>
-  <object id="4" name="c0" x="0.75" y="0.75" width="238.75" height="12.75"/>
-  <object id="5" name="c1" x="0.75" y="1" width="13.25" height="159"/>
-  <object id="6" name="c2" x="1.5" y="144.75" width="238.5" height="16"/>
-  <object id="7" name="c3" x="227.5" y="0" width="12.75" height="159.75"/>
-  <object id="8" name="c4" x="224" y="14.5" width="3" height="131.25"/>
-  <object id="10" name="c5" x="176.5" y="32.25" width="47.5" height="13"/>
-  <object id="11" name="c6" x="15.5" y="14.5" width="16.5" height="17.5"/>
-  <object id="14" name="c7" x="32.5" y="31.875" width="30.875" height="12.25"/>
-  <object id="15" name="c8" x="80.375" y="32" width="15.375" height="12.125"/>
-  <object id="16" name="ec_EggBoy_nobleeggboy" x="103.875" y="65">
+  <object id="3" name="map_desert-house-1.tmx" x="208.75" y="14.5" width="6.5" height="17"/>
+  <object id="4" name="col_0" x="0.75" y="0.75" width="238.75" height="12.75"/>
+  <object id="5" name="col_1" x="0.75" y="1" width="13.25" height="159"/>
+  <object id="6" name="col_2" x="1.5" y="144.75" width="238.5" height="16"/>
+  <object id="7" name="col_3" x="227.5" y="0" width="12.75" height="159.75"/>
+  <object id="8" name="col_4" x="224" y="14.5" width="3" height="131.25"/>
+  <object id="10" name="col_5" x="176.5" y="32.25" width="47.5" height="13"/>
+  <object id="11" name="col_6" x="15.5" y="14.5" width="16.5" height="17.5"/>
+  <object id="14" name="col_7" x="32.5" y="31.875" width="30.875" height="12.25"/>
+  <object id="15" name="col_8" x="80.375" y="32" width="15.375" height="12.125"/>
+  <object id="16" name="chr_EggBoy_nobleeggboy" x="103.875" y="65">
    <point/>
   </object>
   <object id="17" name="ipp_desert.ipp" x="45" y="59.5">

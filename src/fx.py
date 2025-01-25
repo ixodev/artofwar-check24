@@ -1,12 +1,13 @@
 import pygame as pg
 from asset_manager import AssetManager
+from task import Task
 from utils import get_surface
 
 
 DEFAULT_UPDATE_RATE = 1
 
 
-class FX(pg.sprite.Sprite):
+class FX(pg.sprite.Sprite, Task):
     def __init__(self, name: str, sprite_size: tuple, pos: tuple, loop: int, update_rate: 5):
         super().__init__()
 
@@ -52,3 +53,6 @@ class FX(pg.sprite.Sprite):
                         self.running = False        
 
             self.image = get_surface(self.spritesheet, [self.tx, self.ty, self.size[0], self.size[1]])
+
+    def run(self):
+        self.start()

@@ -1,37 +1,16 @@
-import pygame as pg
 import pytmx
 import pyscroll
 
-from game_settings import *
-from asset_manager import AssetManager
-from fxmanager import FXManager
-
-from entity import *
-from player import Player
-from character import Character
-from monster import Monster
-from boss import Boss
-from fx import *
-
-from giant_racoon import GiantRacoon
-from i_interpreter import IPPInterpreter
-from hud import *
+from ipp_interpreter import IPPInterpreter
+from src.object_creator import *
 
 
 ZOOM = 3
-
-COLLISION_ID = "c"
-SWITCH_MAP_AREA_ID = "m_"
-SPAWN_POINT_ID = "s_"
-MAIN_SPAWN_POINT_FULL = "s_main"
-SPAWN_FX_ID = "fx_"
-
-SPAWN_CHARACTER_ID = "ec_"
-SPAWN_MONSTER_ID = "em_"
-SPAWN_BOSS_ID = "eb_"
-
 PLAYER_LAYER = 3
-IPP_FILEDEF = "ipp_"
+MAIN_SPAWN_POINT_FULL = "spn_main"
+
+
+
 
 
 class GameMap:
@@ -63,8 +42,9 @@ class GameMap:
         self.fx_manager = FXManager(self)
 
         self.ipp_file = ""
-        #self.ipp_interpreter = IPPInterpreter()
+        self.ipp_interpreter = None
         self.entity_ipp_functions = {}
+        self.action_points = {}
 
         self.create_objects()
 
@@ -85,44 +65,9 @@ class GameMap:
                 self.walls.append(pg.Rect(obj.x, obj.y, obj.width, obj.height))
             elif obj.name == MAIN_SPAWN_POINT_FULL:
                 self.main_spawn_point = (obj.x, obj.y)
-            elif obj.name.startswith(SWITCH_MAP_AREA_ID):
-                self.switch_map_areas.update({(obj.x, obj.y, obj.width, obj.height): obj.name.split('_')[1]})
-            elif obj.name.startswith(SPAWN_POINT_ID):
-                self.spawn_points.update({obj.name.split('_')[1]: (obj.x, obj.y, 0, 0)})
-            elif obj.name.startswith(SPAWN_FX_ID):
-                tokens = obj.name.split('_')
 
-                if tokens[3] == "DEFAULT":
-                    update_rate = DEFAULT_UPDATE_RATE
-                else:
-                    update_rate = int(tokens[3])
+            object_creation_functions[obj.name.split('_')[0] + '_'](self, obj)
 
-                self.fx_manager.start_fx(tokens[1], (obj.x, obj.y), int(tokens[2]), update_rate)
-            elif obj.name.startswith(IPP_FILEDEF):
-                self.ipp_file = obj.name.split('_')[1]
-                self.ipp_interpreter = IPPInterpreter(self.asset_manager.get_file_path(f"Backgrounds/Worlds/{self.ipp_file}"), self.world, self.player)
-
-            else:
-                tokens = obj.name.split('_')
-                entity_name = tokens[1]
-
-                if obj.name.startswith(SPAWN_CHARACTER_ID):
-                    entity = Character(entity_name, pg.math.Vector2(obj.x, obj.y), obj.name)
-                elif obj.name.startswith(SPAWN_MONSTER_ID):
-                    entity = Monster(entity_name, pg.math.Vector2(obj.x, obj.y), self.player, obj.name)
-                elif obj.name.startswith(SPAWN_BOSS_ID):
-                    #entity = GiantRacoon(entity_name, pg.math.Vector2(obj.x, obj.y), self.player, obj.name)
-                    entity = Boss(entity_name, pg.math.Vector2(obj.x, obj.y), self.player, obj.name)
-                
-                if len(tokens) >= 3:
-                    self.entity_ipp_functions.update({entity: tokens[2]})
-
-                if len(tokens) >= 4:
-                    layer = int(tokens[3])
-                else:
-                    layer = 1
-
-                self.add_entity(entity, layer)
 
     def update(self, pressed_keys: list, action_keys: dict):
         map_switch_string = self.check_map_switches(action_keys)
@@ -163,6 +108,10 @@ class GameMap:
                     self.is_interaction = False
             else:
                 self.is_interaction = False
+
+        for action_point in self.action_points:
+            if self.player.rect.colliderect(action_point) and action_keys[pg.K_SPACE]:
+                self.ipp_interpreter.exec_function(self.action_points[action_point], [])
                 
 
     def check_map_switches(self, action_keys: dict):

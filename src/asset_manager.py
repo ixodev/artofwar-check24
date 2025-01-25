@@ -1,8 +1,6 @@
 import pygame as pg
 import os
 
-
-
 ASSETS_DIR_PATH_TESTER = "assets_dir_path_tester"
 
 class AssetManager:
@@ -33,3 +31,7 @@ class AssetManager:
 
     def get_file_path(self, path: str):
         return f"{self.assets_dir}{path}" if path.startswith('/') else f"{self.assets_dir}/{path}"
+
+
+
+ASSET_MANAGER = AssetManager()

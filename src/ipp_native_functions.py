@@ -315,150 +315,173 @@ def fx_wait(world, player: Player, program_variables: dict, parameters: list):
             should_continue_wait = False
 
 def set_npc_animation(world, player: Player, program_variables: dict, parameters: list):
-    parameters[0].set_animation(parameters[1])
+    parameters[0].action(parameters[1], reset_tx=bool(parameters[2]))
 
-def mul(world, player: Player, program_variables: dict, parameters: list):
+
+
+
+
+
+def mul(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"*\" operator expected 2 operands")
 
     return parameters[0] * parameters[1]
 
-def div(world, player: Player, program_variables: dict, parameters: list):
+def div(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"/\" operator expected 2 operands")
 
     return parameters[0] / parameters[1]
 
-def plus(world, player: Player, program_variables: dict, parameters: list):
+
+def plus(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"+\" operator expected 2 operands")
-    
+
     return parameters[0] + parameters[1]
 
-def minus(world, player: Player, program_variables: dict, parameters: list):
+
+def minus(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"-\" operator expected 2 operands")
 
     return parameters[0] - parameters[1]
 
-def mod(world, player: Player, program_variables: dict, parameters: list):
+
+def mod(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"%\" operator expected 2 operands")
 
     return parameters[0] % parameters[1]
 
-def int_div(world, player: Player, program_variables: dict, parameters: list):
+
+def int_div(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"//\" operator expected 2 operands")
 
     return parameters[0] // parameters[1]
 
-def pow_func(world, player: Player, program_variables: dict, parameters: list):
+
+def pow_func(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"**\" operator expected 2 operands")
 
     return parameters[0] ** parameters[1]
 
-def bin_and_func(world, player: Player, program_variables: dict, parameters: list):
+
+def bin_and_func(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"&\" operator expected 2 operands")
 
     return parameters[0] & parameters[1]
 
-def bin_or_func(world, player: Player, program_variables: dict, parameters: list):
+
+def bin_or_func(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"|\" operator expected 2 operands")
 
     return parameters[0] | parameters[1]
 
-def bin_xor_func(world, player: Player, program_variables: dict, parameters: list):
+
+def bin_xor_func(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"^\" operator expected 2 operands")
 
     return parameters[0] ^ parameters[1]
 
-def bin_rev_func(world, player: Player, program_variables: dict, parameters: list):
+
+def bin_rev_func(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 1:
         raise Exception("\"~\" operator expected 1 operand")
 
     return ~(parameters[0])
 
-def eq(world, player: Player, program_variables: dict, parameters: list):
+
+def eq(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"eq\" operator expected 2 operands")
 
     return parameters[0] == parameters[1]
 
-def neq(world, player: Player, program_variables: dict, parameters: list):
+
+def neq(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"neq\" operator expected 2 operands")
 
     return parameters[0] != parameters[1]
 
-def neg(world, player: Player, program_variables: dict, parameters: list):
+
+def neg(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 1:
         raise Exception("\"!\" operator expected 1 operand")
 
     return not parameters[0]
 
-def and_func(world, player: Player, program_variables: dict, parameters: list):
+
+def and_func(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"&&\" operator expected 2 operands")
 
     return parameters[0] and parameters[1]
 
-def or_func(world, player: Player, program_variables: dict, parameters: list):
+
+def or_func(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"||\" operator expected 2 operands")
 
     return parameters[0] or parameters[1]
 
-def greater(world, player: Player, program_variables: dict, parameters: list):
+
+def greater(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\">\" operator expected 2 operands")
 
     return parameters[0] > parameters[1]
 
-def smaller(world, player: Player, program_variables: dict, parameters: list):
+
+def smaller(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"<\" operator expected 2 operands")
 
     return parameters[0] < parameters[1]
 
-def smaller_eq(world, player: Player, program_variables: dict, parameters: list):
+
+def smaller_eq(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\"<eq\" operator expected 2 operands")
 
     return parameters[0] <= parameters[1]
 
 
-def greater_eq(world, player: Player, program_variables: dict, parameters: list):
+def greater_eq(world, player, program_variables: dict, parameters: list):
     if len(parameters) != 2:
         raise Exception("\">eq\" operator expected 2 operands")
 
     return parameters[0] >= parameters[1]
 
-NEG="!"
-REV="~"
 
-MUL="*"
-DIV="/"
-PLUS="+"
-MINUS="-"
-MOD="%"
-INT_DIV="//"
-POW="**"
-BIN_AND="&"
-BIN_OR="|"
-XOR="^"
-EQ="=="
-NEQ="!="
-AND="&&"
-OR="||"
-GREATER=">"
-SMALLER="<"
-GREATER_EQ=">="
-SMALLER_EQ="<="
+NEG = "!"
+REV = "~"
+
+MUL = "*"
+DIV = "/"
+PLUS = "+"
+MINUS = "-"
+MOD = "%"
+INT_DIV = "//"
+POW = "**"
+BIN_AND = "&"
+BIN_OR = "|"
+XOR = "^"
+EQ = "=="
+NEQ = "!="
+AND = "&&"
+OR = "||"
+GREATER = ">"
+SMALLER = "<"
+GREATER_EQ = ">="
+SMALLER_EQ = "<="
 
 # Sorted by operator priorities
 unary_operators = [
@@ -470,8 +493,8 @@ binary_operators = [
     XOR,
     BIN_OR,
     BIN_AND,
-    PLUS,
     MINUS,
+    PLUS,
     MOD,
     POW,
     INT_DIV,
@@ -486,6 +509,8 @@ binary_operators = [
     OR,
     AND
 ]
+
+
 
 native_functions = {
     "credits": show_credits,

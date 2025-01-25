@@ -6,47 +6,47 @@
  <tileset firstgid="805" source="elements.tsx"/>
  <tileset firstgid="1045" source="house.tsx"/>
  <objectgroup id="2" name="objects">
-  <object id="1" name="s_desert.tmx" x="48.25" y="133.75">
+  <object id="1" name="spn_desert.tmx" x="48.25" y="133.75">
    <point/>
   </object>
-  <object id="2" name="c0" x="0.25" y="143.5" width="31.5" height="16.25"/>
-  <object id="3" name="c1" x="0.25" y="-0.25" width="14.25" height="151.75"/>
-  <object id="4" name="c2" x="8.75" y="-0.75" width="231" height="13.5"/>
-  <object id="5" name="c3" x="225.25" y="-1.5" width="15" height="162.25"/>
-  <object id="6" name="c4" x="80.5" y="144.75" width="154" height="15"/>
-  <object id="9" name="c5" x="29" y="159.75" width="53.75" height="2"/>
-  <object id="10" name="m_desert.tmx" x="31.75" y="154" width="49" height="5"/>
-  <object id="11" name="c6" x="112.25" y="32.5" width="48" height="15.75"/>
-  <object id="12" name="c7" x="161" y="32" width="14.5" height="13.75"/>
-  <object id="15" name="c8" x="192.938" y="32.125" width="30.875" height="13.3125"/>
-  <object id="20" name="c10" x="15.7273" y="129.455" width="15.8182" height="14.2727"/>
-  <object id="22" name="c11" x="34" y="114.182" width="43" height="10.0909"/>
-  <object id="25" name="c12" x="211.091" y="131.273" width="10.3636" height="12"/>
-  <object id="26" name="c13" x="211.273" y="128.182" width="11.0909" height="2.18182"/>
-  <object id="27" name="c14" x="208.727" y="128" width="2.36364" height="1.09091"/>
-  <object id="28" name="c15" x="159.091" y="16" width="1.27273" height="16.1818"/>
-  <object id="29" name="ec_Noble_noble" x="45.8182" y="95.2727">
+  <object id="2" name="col_0" x="0.25" y="143.5" width="31.5" height="16.25"/>
+  <object id="3" name="col_1" x="0.25" y="-0.25" width="14.25" height="151.75"/>
+  <object id="4" name="col_2" x="8.75" y="-0.75" width="231" height="13.5"/>
+  <object id="5" name="col_3" x="225.25" y="-1.5" width="15" height="162.25"/>
+  <object id="6" name="col_4" x="80.5" y="144.75" width="154" height="15"/>
+  <object id="9" name="col_5" x="29" y="159.75" width="53.75" height="2"/>
+  <object id="10" name="map_desert.tmx" x="31.75" y="154" width="49" height="5"/>
+  <object id="11" name="col_6" x="112.25" y="32.5" width="48" height="15.75"/>
+  <object id="12" name="col_7" x="161" y="32" width="14.5" height="13.75"/>
+  <object id="15" name="col_8" x="192.938" y="32.125" width="30.875" height="13.3125"/>
+  <object id="20" name="col_10" x="15.7273" y="129.455" width="15.8182" height="14.2727"/>
+  <object id="22" name="col_11" x="34" y="114.182" width="43" height="10.0909"/>
+  <object id="25" name="col_12" x="211.091" y="131.273" width="10.3636" height="12"/>
+  <object id="26" name="col_13" x="211.273" y="128.182" width="11.0909" height="2.18182"/>
+  <object id="27" name="col_14" x="208.727" y="128" width="2.36364" height="1.09091"/>
+  <object id="28" name="col_15" x="159.091" y="16" width="1.27273" height="16.1818"/>
+  <object id="29" name="chr_Noble_noble" x="45.8182" y="95.2727">
    <point/>
   </object>
-  <object id="30" name="ec_EggGirl_noblewife" x="161.818" y="52.1818">
+  <object id="30" name="chr_EggGirl_noblewife" x="161.818" y="52.1818">
    <point/>
   </object>
-  <object id="33" name="c9" x="15.8182" y="31.8182" width="48.1818" height="15.8182"/>
-  <object id="34" name="c16" x="25.6364" y="15.2727" width="3.45455" height="16.1818"/>
-  <object id="35" name="m_desert-balcony-1.tmx" x="29.4545" y="14.7273" width="8.72727" height="16.5455"/>
-  <object id="36" name="s_desert-balcony-1.tmx" x="47.0909" y="14.3636">
+  <object id="33" name="col_9" x="15.8182" y="31.8182" width="48.1818" height="15.8182"/>
+  <object id="34" name="col_16" x="25.6364" y="15.2727" width="3.45455" height="16.1818"/>
+  <object id="35" name="map_desert.tmx_balcony" x="29.4545" y="14.7273" width="8.72727" height="16.5455"/>
+  <object id="36" name="spn_desert.tmx_balcony" x="47.0909" y="14.3636">
    <point/>
   </object>
-  <object id="38" name="c17" x="167.091" y="128.182" width="33.8182" height="14.9091"/>
-  <object id="40" name="c18" x="150" y="15.6364" width="3.63636" height="16"/>
-  <object id="41" name="m_desert-house-1-2.tmx" x="144.727" y="15.6364" width="4.72727" height="16"/>
-  <object id="42" name="s_desert-house-1-2.tmx" x="127.091" y="16.1818">
+  <object id="38" name="col_17" x="167.091" y="128.182" width="33.8182" height="14.9091"/>
+  <object id="40" name="col_18" x="150" y="15.6364" width="3.63636" height="16"/>
+  <object id="41" name="map_desert-house-1-2.tmx" x="144.727" y="15.6364" width="4.72727" height="16"/>
+  <object id="42" name="spn_desert-house-1-2.tmx" x="127.091" y="16.1818">
    <point/>
   </object>
   <object id="43" name="ipp_desert.ipp" x="126.364" y="58.7273">
    <point/>
   </object>
-  <object id="45" name="c19" x="127.913" y="78.3913" width="31.8696" height="17.7391"/>
+  <object id="45" name="col_19" x="127.913" y="78.3913" width="31.8696" height="17.7391"/>
  </objectgroup>
  <layer id="1" name="floor" width="15" height="10">
   <data encoding="csv">
@@ -62,7 +62,7 @@
 0,0,45,46,2147483693,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="3" name="decorations_1" width="15" height="10">
+ <layer id="3" name="decorationspn_1" width="15" height="10">
   <data encoding="csv">
 2147484347,698,698,698,698,698,698,698,698,698,698,698,698,698,699,
 705,2147484652,0,0,0,0,0,0,0,988,0,0,0,0,709,
@@ -118,7 +118,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="7" name="decorations_2" width="15" height="10">
+ <layer id="7" name="decorationspn_2" width="15" height="10">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,920,956,925,926,0,

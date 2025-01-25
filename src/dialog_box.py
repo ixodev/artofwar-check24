@@ -1,13 +1,10 @@
 import random
 import pygame as pg
 from game_settings import *
-from asset_manager import AssetManager
+from asset_manager import *
+from src.task import Task
 
-
-
-asset_manager = AssetManager()
-
-FONT_PATH = asset_manager.get_file_path("HUD/Font/Font.ttf")
+FONT_PATH = ASSET_MANAGER.get_file_path("HUD/Font/Font.ttf")
 FONT_SIZE = 20
 
 TYPING_SPEED = 60
@@ -59,8 +56,8 @@ messagebox_actions = {
 }
 
 messagebox_types = {
-    MESSAGEBOX_STANDARD: asset_manager.get_file_path("HUD/Dialog/DialogBox.png"),
-    MESSAGEBOX_FACESET: asset_manager.get_file_path("HUD/Dialog/DialogBoxFaceset.png")
+    MESSAGEBOX_STANDARD: ASSET_MANAGER.get_file_path("HUD/Dialog/DialogBox.png"),
+    MESSAGEBOX_FACESET: ASSET_MANAGER.get_file_path("HUD/Dialog/DialogBoxFaceset.png")
 }
 
 messagebox_start_text_coords = {
@@ -73,7 +70,7 @@ messagebox_max_chars = {
     MESSAGEBOX_FACESET: 260
 }
 
-class DialogBox:
+class DialogBox(Task):
     def __init__(self, title: str, text: str, window_hints: int, messagebox_type: int, screen: pg.Surface):
         self.title = title
         self.text = text
@@ -216,6 +213,9 @@ class DialogBox:
                     if evt.key == pg.K_SPACE and press_space_to_continue and not self.is_typing:
                         self.show()
 
+    def run(self):
+        self.show()
+
 
 class MessageBox(DialogBox):
     def __init__(self, title: str, text: str, window_hints: int, screen: pg.Surface):
@@ -230,9 +230,9 @@ class FacesetBox(DialogBox):
         
         if faceset_image == MESSAGEBOX_DEFAULT_FACESET:
             # By default but you can change it if you want
-            self.faceset = asset_manager.get_surface("FacesetUnknown.png")
+            self.faceset = ASSET_MANAGER.get_surface("FacesetUnknown.png")
         else:
-            self.faceset = asset_manager.get_surface(f"Facesets/{faceset_image}")
+            self.faceset = ASSET_MANAGER.get_surface(f"Facesets/{faceset_image}")
 
         self.faceset = pg.transform.scale(self.faceset,
                                          (self.faceset.get_width() * self.resizing,

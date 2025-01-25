@@ -6,6 +6,7 @@ import pygame as pg
 import pytmx
 import pyscroll
 
+from object_creator import *
 from asset_manager import AssetManager
 from read_meta import read_meta_file
 from game_map import *
@@ -36,37 +37,48 @@ class World:
         self.map_switch_effect_rect = pg.Rect(0, self.screen.get_height() * -1, self.screen.get_width(), self.screen.get_height())
 
     def load_maps(self):
+
         self.world_properties = read_meta_file(self.asset_manager.get_world_meta_file(self.id))
         self.maps_as_strings = self.world_properties.get("maps")
+
 
         for map_as_string in self.maps_as_strings:
             map_path = self.asset_manager.get_map_path(map_as_string)
             self.maps.update({map_path: GameMap(map_path, self.screen, self.player, self, self.game)})
 
+
         if not "main_map" in self.world_properties.keys():
             raise Exception("Cannot find main map to load")
-        
+
+
         self.main_map = GameMap(self.asset_manager.get_map_path(self.world_properties.get("main_map")), self.screen, self.player, self, self.game)
         obj = self.main_map.tmx_data.get_object_by_name(MAIN_SPAWN_POINT_FULL)
         self.player.position = [obj.x, obj.y]
 
+
         self.maps.update({self.asset_manager.get_map_path(self.world_properties.get("main_map")): self.main_map})
+
 
         self.current_map = self.main_map
         self.previous_map = self.current_map
 
+
         if not self.main_map.map_path in self.maps.keys():
             self.maps.update({self.main_map.map_path: self.main_map})
 
+
         self.reload_player_position()
+
 
     def switch_map(self, file: str):
 
         if self.maps.get(file) is None:
             self.maps.update({self.asset_manager.get_map_path(file): GameMap(self.asset_manager.get_map_path(file), self.screen, self.player, self, self.game)})
 
+
         self.previous_map = self.current_map
         self.current_map = self.maps.get(self.asset_manager.get_map_path(file))
+
         self.reload_player_position()
         self.current_map.group.center(self.player.rect.center)
         self.previous_map.group.center(self.player.rect.center)
@@ -76,8 +88,9 @@ class World:
         if self.current_map is self.main_map:
             obj = self.current_map.tmx_data.get_object_by_name(MAIN_SPAWN_POINT_FULL)
         else:
-            obj = self.current_map.tmx_data.get_object_by_name(f"s_{self.previous_map.filename}")
+            obj = self.current_map.tmx_data.get_object_by_name(SPAWN_POINT_ID + self.previous_map.filename)
         self.player.position = [obj.x, obj.y]
+
 
     def update(self, pressed_keys: list, action_keys: dict):
         self.current_map.update(pressed_keys, action_keys)
@@ -110,4 +123,3 @@ class World:
             self.make_map_switch_effect()
 
         blit_handle_text(self.screen, self.current_map.draw_help_text)
-

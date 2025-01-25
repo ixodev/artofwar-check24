@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10cdbc80-8e52-4da5-bd3b-a68c75fdaa27" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/night.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pathfinding.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/task.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/taskmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artofwar-6264c642b681bc2ab64d518da415427f4cbdb58b.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert-balcony-1.tmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert-house-1-2.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert-house-1-2.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert-house-1.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert-house-1.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert.ipp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert.ipp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Backgrounds/Worlds/desert.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/asset_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dialog_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dialog_box.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fx.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i_interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ipp_interpreter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i_native_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ipp_native_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2rakyOEVKRGKSAjjAgs2mLaAzUI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.expression_eval.executor&quot;: &quot;Run&quot;,
+    &quot;Python.game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new_ipp_ver.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/arsla/Documents/ML-main&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\arsla\Documents\Coding\artofwar-check24-main\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.game">
+    <configuration name="expression_eval" type="PythonConfigurationType" factoryName="Python">
+      <module name="artofwar-check24-main" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="src/ipp_expression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="game" type="PythonConfigurationType" factoryName="Python">
+      <module name="artofwar-check24-main" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="new_ipp_ver" type="PythonConfigurationType" factoryName="Python">
+      <module name="artofwar-check24-main" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ipp_program.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.expression_eval" />
+      <item itemvalue="Python.game" />
+      <item itemvalue="Python.new_ipp_ver" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10cdbc80-8e52-4da5-bd3b-a68c75fdaa27" name="Changes" comment="" />
+      <created>1736804827778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736804827778</updated>
+    </task>
+    <servers />
+  </component>
+</project>

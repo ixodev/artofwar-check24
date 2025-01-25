@@ -1,6 +1,6 @@
 import sys
 
-from i_native_functions import *
+from ipp_native_functions import *
 
 PROC = "proc"
 ENDPROC = "endproc"
@@ -270,7 +270,7 @@ class IPPInterpreter:
         # ()myfunction;param1;param2;param3, etc.
         # or myfunction;param1;param2;param3
         # So we split the line by ";" and look for the first token, if it's an existing function name
-        # First we look into the dictionary of the native functions, defined in i_native_functions.py
+        # First we look into the dictionary of the native functions, defined in ipp_native_functions.py
 
         tokens = line.split(SEP)
         function_to_call = tokens[0]

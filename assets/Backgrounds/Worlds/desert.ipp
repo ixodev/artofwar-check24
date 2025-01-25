@@ -1,3 +1,9 @@
+proc noblehouseshield
+
+messagebox; "Mr. Rich" ; "Only rich people are allowed here"; MESSAGEBOX_OK
+
+endproc noblehouseshield
+
 proc giantracoon;npc
 
 facesetbox;"Giant Racoon";"RAAAAH!";(()getnpcname;npc);MESSAGEBOX_OK
@@ -27,6 +33,7 @@ endproc fprincess
 proc fslime;npc
 var i=()getnpcinteractions;npc
 
+messagebox;"Slime";"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper, ex eget molestie finibus, neque nulla consectetur lacus, at mattis elit sapien in nunc. Suspendisse ac rutrum nisl. Sed rhoncus lectus erat, vitae accumsan diam fringilla in. Mauris consectetur lacus rhoncus, dignissim purus vel, elementum est. Curabitur sed erat quis arcu consectetur faucibus sed et diam. Maecenas vehicula enim vestibulum ipsum aliquet, eu placerat justo faucibus. Maecenas vel eleifend neque. Morbi non massa libero. Nunc quis ullamcorper sapien, non sagittis velit. Aliquam ultricies rhoncus pharetra. Curabitur lobortis tortor ligula, ac tempor orci commodo sed. Cras tincidunt, tortor eu dictum consequat, erat enim tincidunt nisl, in posuere augue mi in est. TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST"; MESSAGEBOX_OK
 fx_npc;npc;"Plant";1;1
 
 endproc fslime
